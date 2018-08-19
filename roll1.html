@@ -1,0 +1,192 @@
+<html>
+<head>
+<script type="text/javascript" src="j.js">
+</script>
+<style>
+body {
+background-image:url(roll.png);
+background-attachement:fixed;
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
+#app1
+{
+width:15px;
+border:2px solid;
+position:relative;
+top:1px;
+}
+
+#app2
+{
+width:15px;
+border:2px solid;
+position:relative;
+top:1px;
+}
+
+#app3
+{
+width:15px;
+border:2px solid;
+position:relative;
+top:1px;
+}
+
+#app4
+{
+width:15px;
+border:2px solid;
+position:relative;
+top:1px;
+}
+
+#app5
+{
+width:15px;
+border:2px solid;
+position:relative;
+top:1px;
+}
+#d11
+{
+position:relative;
+border:5px solid black;
+width:750px;
+bottom:10px;
+height:250px;
+}
+
+#d22
+{
+position:absolute;
+border:5px solid black;
+width:400px;
+bottom:20px;
+left:320px;
+height:200px;
+}
+
+#i1
+{
+position:absolute;
+width:90px;
+height:30px;
+bottom:90px;
+left:130px;
+border:4px solid white;
+}
+</style>
+</head>
+<body>
+<table cellspacing="10" cellpadding="20">
+<tr>
+<td>
+<p><h1>VEITNAMSE COLD SPRINGS</h1>
+Light and lively snack that will keep your mid-meal cravings in place. 
+<br>
+Take a headlong plunge in a wave of authentic Vietnamese flavours.
+</td>
+<td>
+<p> RS:240 </p>
+</td>
+<td>
+<div id="app1">  0 </div>
+</td>
+<td>
+<input type="button" value="+" onclick="f1()">
+</td>
+</tr>
+<tr>
+<td>
+<p><h1>BURRITOS WITH MINCED</h1>
+This classic Mexican delicacy will knock your socks off! Flour tortillas 
+<br>
+stuffed with a generous helping of mildly-spiced minced meat mixture.
+</td>
+<td>
+<p> RS:300 </p>
+</td>
+<td>
+<div id="app2">  0 </div>
+</td>
+<td>
+<input type="button" value="+" onclick="f2()">
+</td>
+</tr>
+<tr>
+<td>
+<p><h1>PANNEER KATHI ROLL</h1>
+Did you know that kathi roll is a street-food that originated in Kolkata? 
+<br>
+Mutton filled kathis are an all time favourite of dedicated meat lovers.</p>
+</td>
+<td>
+<p> RS:280 </p>
+</td>
+<td>
+<div id="app3">  0 </div>
+</td>
+<td>
+<input type="button" value="+" onclick="f3()">
+</td>
+</tr>
+<tr>
+<td>
+<p><h1>BASE VEGGIES</h1>
+These veggies are the foundation of the salad. They’re the main part and there’s a 
+<br>
+larger amount of these ingredients than the other parts of the salad.</p>
+</td>
+<td>
+<p> RS:200 </p>
+</td>
+<td>
+<div id="app4">  0 </div>
+</td>
+<td>
+<input type="button" value="+" onclick="f4()">
+</td>
+</tr>
+<tr>
+<td>
+<p><h1>PANNER SHAWARMA</h1>
+Shawarma has its genesis in the Turkish doner kebab. 
+Bite in to these mouthwatering rolls loaded with cheese and authentic masalas.
+</p>
+</td>
+<td>
+<p> RS:150</p>
+</td>
+<td>
+<div id="app5">  0 </div>
+</td>
+<td>
+<input type="button" value="+" onclick="f5()">
+</td>
+</tr>
+</table>
+
+<div id="d11">
+<h2>BILL</h2>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+<p id="p5"></p>
+
+<div id="d22">
+<br>
+<input type="button" style="background-color:magenta;color:white" value="ADD AMOUNT" onclick="add1()">
+<br>
+<br>
+<h2 style="color:white">Total Cost</h2>
+<input type="text" value="0.00" id="i1">
+<br>
+<br>
+<input type="button" style="background-color:blue;color:white" value="ADD TO CART" onclick="a()">
+</div>
+</div>
+</body>
+</html>
